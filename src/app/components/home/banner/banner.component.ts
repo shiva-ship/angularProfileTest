@@ -42,24 +42,39 @@ export class BannerComponent implements OnInit {
   }
 
   ngOnInit(): void { 
+     
+    // this.dat=this.time
     
-    this.dat=this.time
+    // console.log(typeof this.intHour)
+    // // this.Greet=this.time==="p. m."
+    
     this.intHour=parseInt(this.hour,10)
-    console.log(typeof this.intHour)
-    // this.Greet=this.time==="p. m."
-    
-    
-    if(this.time==='p. m.'){
+    if(this.time==='PM'){
       if(this.intHour<=5){
         this.Greet="Good Afternoon"
       }else{
         this.Greet="Good Evening"
-      }
-      
-
-    }else if(this.time==='a. m.'){
+      }  
+    }else if(this.time==='AM'){
       this.Greet="Good Morning"
     }
+    
+    //USE THE BELOW CODE FOR LOCAL SERVER 
+      // this.dat=this.time
+      // this.intHour=parseInt(this.hour,10)
+      // console.log(typeof this.intHour)
+      // // this.Greet=this.time==="p. m."
+      
+      
+      // if(this.time==='p. m.'){
+      //   if(this.intHour<=5){
+      //     this.Greet="Good Afternoon"
+      //   }else{
+      //     this.Greet="Good Evening"
+      //   }
+      // }else if(this.time==='a. m.'){
+      //   this.Greet="Good Morning"
+      // }
     console.log(this.time,"this is AM/PM")
     console.log(this.Greet,"This is greet message ")
     console.log(this.hour,"this is hour")
