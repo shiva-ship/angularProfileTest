@@ -68,7 +68,7 @@ export class HeaderComponent implements OnInit {
       let url = window.location.href;
 
       // Open a new window with the CV
-      window.open(url + "/../assets/cv/" + this.cvName, "_blank");
+      window.open(url + "/../assets/cv/Resume-Shivansh Rastogi - Overleaf.pdf" , "_blank");
     })
 
   }
