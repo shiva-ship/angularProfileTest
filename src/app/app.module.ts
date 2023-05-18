@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { DatePipe } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './components/home/home.module';
@@ -43,7 +43,7 @@ export function HttpLoaderFactory(http: HttpClient){
       }
     })
   ],
-  providers: [TranslateService],
+  providers: [TranslateService,DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

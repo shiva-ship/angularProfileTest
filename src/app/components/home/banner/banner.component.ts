@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 import {trigger, state, style, animate, transition, stagger, query } from "@angular/animations"
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
@@ -25,13 +26,40 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 })
 export class BannerComponent implements OnInit {
 
-  
-
+  Greet;
+ time;
+ hour;
+ intHour;
+ dat:string;
   constructor(
-    public analyticsService: AnalyticsService
-  ) { }
+    public analyticsService: AnalyticsService,
+    public datepipe: DatePipe
+  ) { 
+      this.time =this.datepipe.transform((new Date), 'aaa');
+      this.hour =this.datepipe.transform((new Date), 'HH');
+      // if(time>=)
+    // console.log(currentDateTime);
+  }
 
   ngOnInit(): void { 
+    
+    this.dat=this.time
+    this.intHour=parseInt(this.hour,10)
+    console.log(typeof this.intHour)
+    // this.Greet=this.time==="p. m."
+    
+    this.Greet=this.time
+    if(this.time==='p. m.'){
+      if(this.intHour<=5){
+        this.Greet="Good Afternoon"
+      }else{
+        this.Greet="Good Evening"
+      }
+      
+
+    }else if(this.time==='a. m.'){
+      this.Greet="Good Morning"
+    }
   }
   
 
