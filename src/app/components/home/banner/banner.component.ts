@@ -48,7 +48,7 @@ export class BannerComponent implements OnInit {
     console.log(typeof this.intHour)
     // this.Greet=this.time==="p. m."
     
-    this.Greet=this.time
+    
     if(this.time==='p. m.'){
       if(this.intHour<=5){
         this.Greet="Good Afternoon"
