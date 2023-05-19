@@ -54,7 +54,7 @@ ngAfterViewInit(): void {
     
     this.intHour=parseInt(this.hour,10)
     if(this.time==='PM'){
-      if(this.intHour<=5){
+      if(this.intHour<=17){
         this.Greet="Good Afternoon"
       }else{
         this.Greet="Good Evening"
