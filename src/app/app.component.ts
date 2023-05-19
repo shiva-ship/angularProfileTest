@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import { Title, Meta } from '@angular/platform-browser';
 import { LanguageService } from "src/app/services/language/language.service"
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -14,13 +15,14 @@ export class AppComponent implements OnInit {
   constructor(
     private titleService: Title,
     private metaService: Meta,
-    private languageService: LanguageService
+    private languageService: LanguageService,
+    public datepipe: DatePipe
   ) {
   }
   ngOnInit(): void {
 
     this.languageService.initLanguage()
-
+    console.log("this is After loading",this.datepipe.transform((new Date), 'SSS'))
     this.titleService.setTitle("Shivansh Rastogi | Full Stack Developer | Spring Developer | Software Engineer");
     this.metaService.addTags([
       { name: 'keywords', content: 'Frontend, MEAN Stack Developer , MERN Stack Development , Software Engineer, software, developer' },
