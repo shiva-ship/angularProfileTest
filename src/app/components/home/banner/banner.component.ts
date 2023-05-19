@@ -24,13 +24,14 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
     ])
   ]
 })
-export class BannerComponent implements OnInit {
+export class BannerComponent implements OnInit,AfterViewInit {
 
-  Greet;
+ Greet;
  time;
  hour;
  intHour;
  dat:string;
+ timeStart;
   constructor(
     public analyticsService: AnalyticsService,
     public datepipe: DatePipe
@@ -40,9 +41,12 @@ export class BannerComponent implements OnInit {
       // if(time>=)
     // console.log(currentDateTime);
   }
-
+ngAfterViewInit(): void {
+  console.log("this is After loading",this.datepipe.transform((new Date), 'SSS'))
+  // this.timeStart=this.datepipe.transform((new Date), 'SSS');
+}
   ngOnInit(): void { 
-     
+    console.log("this is Before loading",this.datepipe.transform((new Date), 'SSS'))
     // this.dat=this.time
     
     // console.log(typeof this.intHour)
