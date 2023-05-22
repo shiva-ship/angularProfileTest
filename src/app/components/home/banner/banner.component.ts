@@ -60,6 +60,9 @@ ngAfterViewInit(): void {
         this.Greet="Good Evening"
       }  
     }else if(this.time==='AM'){
+      if(this.intHour>0&&this.intHour<5){
+        this.Greet="Greetings"
+      }else
       this.Greet="Good Morning"
     }
     
