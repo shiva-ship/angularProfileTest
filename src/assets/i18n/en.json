@@ -10,48 +10,44 @@
     "Banner.ActionBtn": "Get in touch",
     "AboutMe.Title": "About me",
     "AboutMe.Paragraphs": [
-        "In my <span class='underline'>3 years as a developer</span>, I seek to train every day. I have worked writing <span class='underline'>unit tests</span>, <span class='underline'>performing continuous integration</span>, and covering backend developer roles with <span class='underline'>ExpressJS, NestJs, MongoDB and Mysql</span>. I have led teams having empathy, exercising motivation to partners, and setting plans and goals together.",
-        "My skills also include implementing system improvements, optimizing sites, standardizing patterns, and suggesting and executing ideas that add value to the project I'm working on.",
-        "Some of the technologies that I have trained and worked on include (but are not limited to):"
+        "In my <span class ='underline'>4 years as an Undergraduate</span>, I have focused on continuous growth and improvement. I excel in writing unit tests, performing continuous integration, and assuming backend roles using ExpressJS, NestJS, MongoDB, and MySQL. ",
+        "I also possess strong leadership skills, leading teams with empathy, motivation, and collaborative planning. ",
+        "I thrive on optimizing systems, suggesting valuable ideas, and standardizing patterns to enhance project outcomes. Some technologies I specialize in include (but are not limited to)."
     ],
     "Experience.Title": "Experience",
     "Experience.Jobs": [
         {
-            "Tab": "Emblem",
+            "Tab": "TIAA",
             "Title": "Fullstack developer",
-            "Date": "March 2022 - Present",
+            "Date": "June 2022 - July 2022",
             "Description": [
-                "Developed and maintained a web-based application using Angular, Node.js, and MongoDB, resulting in improved user experience and increased performance.",
-                "Designed and implemented RESTful APIs to support multiple applications, using Node.js and Express.",
-                "Built a real-time chat application using WebSockets and Node.js, increasing communication and collaboration among team members.",
-                "Implementation of continuous integration and daily backups.",
-                "Leading a team of 4 people in the development of a E-commerce platform made in React, Node, and MySQL.",
-                "Planning meetings in reports."
+                "Designed, Developed TIAA employee engagement portal with SpringBoot.",
+                "Used Test driven development to develop RESTfull APIs in spring application.",
+                "Incorporated Abstract factory design pattern",
+                "Developed a Utility and written 2000+ lines of code.",
+                "Worked with angular and mongoDB for frontend and database respectively."
             ]
         },
         
         {
-            "Tab": "BCM",
-            "Title": "Frontend developer",
-            "Date": "October 2020 - Feburary 2022",
+            "Tab": "Oyesters Training",
+            "Title": "Intern",
+            "Date": "July 2020 - August 2022",
             "Description": [
-                "Developed and maintained web applications using Angular and React.",
-                "Implementation CI / CD in AWS. Refactoring and optimizing application load times.",
-                "Coding of API requests with RxJS.",
-                "Creation of modules with complex reactive forms",
-                "Improved website performance by optimizing images and implementing caching techniques.",
-                "Collaborated with designers and back-end developers to create responsive and user-friendly web experiences"
+                "Day-to-day project coordination, planning and implementation.",
+                "To provide support and technical assistance.",
+                "To process and analyze code for refinement and optimize.",
+                "Worked on 3 different technologies.",
+                "Written 1500+ lines of code."
             ]
         },
         {
-            "Tab": "Freelancer",
-            "Title": "Independent",
-            "Date": "March 2020 - Present",
+            "Tab": "Quantum Educator",
+            "Title": "Assistant Personnel",
+            "Date": "April 2019 - July 2019",
             "Description": [
-                "Implementing continuous improvements, working on frontend and backend.",
-                "Creating platforms with Angular, Nodejs, ExpressJS, WordPress programmed with functional, reactive, and object-oriented programming paradigms.",
-                "Automation of processes with data structures.",
-                "Design layout with SASS, Bootstrap, Materialize, Prime Faces, etc."
+                "Asst. Lecturer in Mathematics and Chemistry",
+                "Helped nearly 50+ students to clear their academic year."
             ]
         }
     ],
