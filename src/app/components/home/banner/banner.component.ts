@@ -61,7 +61,8 @@ ngAfterViewInit(): void {
       }  
     }else if(this.time==='AM'){
       if(this.intHour>0&&this.intHour<5){
-        this.Greet="Greetings"
+        // this.Greet="Greetings"
+        this.Greet="Hello! I hope you're enjoying the tranquility of the night."
       }else
       this.Greet="Good Morning"
     }
@@ -83,8 +84,8 @@ ngAfterViewInit(): void {
       //   this.Greet="Good Morning"
       // }
     console.log(this.time,"this is AM/PM")
-    console.log(this.Greet,"This is greet message ")
-    console.log(this.hour,"this is hour")
+    console.log(this.Greet,"This is greet mesage ")
+    // console.log(this.hour,"this is hour")
     console.log(this.intHour,"this is intHour")
   }
   
