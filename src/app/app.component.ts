@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import { Title, Meta } from '@angular/platform-browser';
 import { LanguageService } from "src/app/services/language/language.service"
 import { DatePipe } from '@angular/common';
+// import { PreloaderComponent } from './components/general/preloader/preloader.component';
 
 @Component({
   selector: 'app-root',
@@ -17,10 +18,12 @@ export class AppComponent implements OnInit {
     private metaService: Meta,
     private languageService: LanguageService,
     public datepipe: DatePipe
+    // public preloadStatus:PreloaderComponent
   ) {
   }
   ngOnInit(): void {
-
+    
+    // this.preloadStatus.showPreloader=true
     this.languageService.initLanguage()
     console.log("this is After loading",this.datepipe.transform((new Date), 'SSS'))
     this.titleService.setTitle("Shivansh Rastogi | Full Stack Developer | Spring Developer | Software Engineer");
@@ -33,4 +36,5 @@ export class AppComponent implements OnInit {
 
 
   }
+ 
 }

@@ -13,6 +13,8 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { PreloaderComponent } from './components/general/preloader/preloader.component';
+// import { PreloaderComponent } from './preloader/preloader.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -21,6 +23,7 @@ export function HttpLoaderFactory(http: HttpClient){
 @NgModule({
   declarations: [
     AppComponent,
+    // PreloaderComponent
     /* ArchiveComponent */
   ],
   imports: [

@@ -151,7 +151,7 @@
     "defaultProject": "muffeez-portfolio",
     "schematics": {
         "@schematics/angular:component": {
-            "styleext": "scss"
+            "style": "scss"
         }
     },
     "cli": {

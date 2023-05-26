@@ -4,7 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ArchiveComponent } from './components/archive/archive.component';
 
 const routes: Routes = [
-
+  // {path:'preloader'},
   { path: '', component: HomeComponent },
   { path: '**', pathMatch: 'full', redirectTo: '/' },
 

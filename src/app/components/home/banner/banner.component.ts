@@ -3,6 +3,7 @@ import { DatePipe } from '@angular/common';
 
 import {trigger, state, style, animate, transition, stagger, query } from "@angular/animations"
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
+import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-banner',
@@ -34,7 +35,8 @@ export class BannerComponent implements OnInit,AfterViewInit {
  timeStart;
   constructor(
     public analyticsService: AnalyticsService,
-    public datepipe: DatePipe
+    public datepipe: DatePipe,
+    
   ) { 
       this.time =this.datepipe.transform((new Date), 'aaa');
       this.hour =this.datepipe.transform((new Date), 'HH');
@@ -46,6 +48,7 @@ ngAfterViewInit(): void {
   // this.timeStart=this.datepipe.transform((new Date), 'SSS');
 }
   ngOnInit(): void { 
+    
     console.log("this is Before loading",this.datepipe.transform((new Date), 'SSS'))
     // this.dat=this.time
     
@@ -67,7 +70,7 @@ ngAfterViewInit(): void {
       this.Greet="Good Morning"
     }
     
-    //USE THE BELOW CODE FOR LOCAL SERVER 
+    //USE THE BELOW CODE FOR LOCAL SERVER @Shivansh
       // this.dat=this.time
       // this.intHour=parseInt(this.hour,10)
       // console.log(typeof this.intHour)
@@ -83,10 +86,13 @@ ngAfterViewInit(): void {
       // }else if(this.time==='a. m.'){
       //   this.Greet="Good Morning"
       // }
-    console.log(this.time,"this is AM/PM")
-    console.log(this.Greet,"This is greet mesage ")
+
+
+/////this is debugging on prod serv@Shivansh 
+    // console.log(this.time,"this is AM/PM")
+    // console.log(this.Greet,"This is greet mesage ")
     // console.log(this.hour,"this is hour")
-    console.log(this.intHour,"this is intHour")
+    // console.log(this.intHour,"this is intHour")
   }
   
 
